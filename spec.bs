@@ -694,7 +694,7 @@ directly; for authentication the extension can only be accessed via
     {{AuthenticationExtensionsPaymentInputs}} |extension_inputs|:
 
     1. If not in a "[=secure-payment-confirmation=]" payment handler, return a
-        "{{NotAllowedError}}" {{DOMException}}.
+        "{{NotSupportedError}}" {{DOMException}}.
 
         Note: This guards against websites trying to access the extended powers of
         SPC without going through [[#sctn-transaction-confirmation-ux|the
